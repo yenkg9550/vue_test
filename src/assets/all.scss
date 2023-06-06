@@ -1,0 +1,20 @@
+@import 'material-icons/iconfont/material-icons.css';
+// 載入bootstrap套用變數的方法
+@import "~bootstrap/scss/functions";
+// 載入我們自定義的變數
+@import "./helpers/variables";
+// CSS reset
+// @import "./helpers/normalize";
+@import "~bootstrap/scss/bootstrap";
+// 客製化的全站設定
+@import "./helpers/base";
+@import "./helpers/card";
+@import "./helpers/partner";
+@import "./helpers/filter";
+@import "./helpers/footer";
+@import "./helpers/menubar";
+@import "./helpers/button";
+@import "./helpers/home";
+@import "./helpers/solution";
+@import "./helpers/prize";
+@import "./helpers/animate";

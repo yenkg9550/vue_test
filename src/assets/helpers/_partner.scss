@@ -1,0 +1,58 @@
+.partner__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    background: #000;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+
+    .partner {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: $radius-base;
+        
+        &__description {
+            font-size: $text-body;
+            color: $black-20;
+            line-height: $sm-lineh;
+            flex-grow: 1;
+            margin: 22px 0 20px;
+        }
+
+        &__people {
+            display: flex;
+            gap: 16px;
+        }
+
+        &__name {
+            font-size: $text-body;
+            color: $black-0;
+            line-height: $sm-lineh;
+        }
+
+        &__company {
+            font-size: $text-small;
+            color: $black-0;
+            line-height: $sm-lineh;
+
+        }
+
+        &__star {
+            color: $black-0;
+        }
+
+        &__rateblock {
+            display: flex;
+            gap:5.33px;
+        }
+
+        .material_star {
+            color:$black-0;
+        }
+    }
+}

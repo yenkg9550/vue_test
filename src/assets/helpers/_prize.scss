@@ -1,0 +1,62 @@
+.prize__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    background: #000;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+
+    .prize {
+        border: 1px solid $black-80;
+        border-radius: $radius-base;
+        display: flex;
+        flex-direction: column;
+        height: 318px;
+
+        &__content {
+            flex-grow: 1;
+            color: $black-0;
+            padding: 20px 32px;
+            border-bottom: 1px solid $black-80;
+        }
+
+        &__title {
+            color: $black-0;
+            line-height: $base-lineh;
+            margin-bottom: 12px;
+        }
+
+        &__description {
+            color: $black-0;
+            li {
+                list-style: disc inside;
+                color: $black-0;
+                font-size: $text-body;
+                line-height: $sm-lineh;
+            }
+        }
+
+        &__tag {
+            display: flex;
+            font-size: $text-body;
+            justify-content: space-between;
+            padding: 20px 32px;
+        }
+
+        &__money {
+            color: $black-0;
+            margin: 0;
+        }
+
+        &__start {
+            color: $black-0;
+        }
+
+        &__number {
+            color: $black-60;
+        }
+
+    }
+}

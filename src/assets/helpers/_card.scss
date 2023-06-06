@@ -1,0 +1,57 @@
+.card__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 0 12px;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .card {
+        // height: 558px;
+        border-radius: $radius-base;
+        overflow: hidden;
+        border: 1px #F2F2F2 solid;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        img {
+            height: 312px;
+        }
+
+        &__title {
+            padding: 20px 32px;
+            border-bottom: 1px #F2F2F2 solid;
+            flex-grow: 1;
+
+            div {
+                color: $black-80;
+            }
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            font-size: $text-body;
+        }
+
+        &__tag {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 32px;
+            border-bottom: 1px #F2F2F2 solid;
+            
+        }
+
+        &__category {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 32px;
+        }
+    }
+}

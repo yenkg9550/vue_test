@@ -1,0 +1,251 @@
+body{
+    background: $black-100;
+}
+
+.container__base{
+    max-width: 1296px;
+    margin: 0 auto;
+
+    @include mobile {
+        padding: 0 20px;
+    }
+}
+
+.visual {
+    margin: 120px 0 160px;
+
+    &__sub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+
+        @include mobile {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    &__txt {
+        color:$black-0;
+        font-size: $text-d2;
+        font-weight: bold;
+
+        @include mobile {
+            font-size: $text-h1;
+        }
+    }
+
+    &__subtitle {
+        font-size: $text-h1;
+        color: $black-0;
+        font-weight: $weight-black;
+        margin-bottom: 238px;
+        @include mobile {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            font-size: $text-h4;
+        }
+    }
+
+    &__head {
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        width: 188px;
+        @include mobile {
+            margin-bottom: 180px;
+        }
+    }
+
+    &__animate {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        @include mobile {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        &--reverse {
+            justify-content: start;
+        }
+    }
+}
+
+.direction {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap:wrap;
+    gap: 24px;
+    margin-bottom: 160px;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    &__card {
+        padding: 80px 40px;
+        display: flex;
+        gap:20px;
+        flex-direction: column;
+        border: 1px solid $black-80;
+        border-radius: $radius-base;
+        @include mobile {
+            padding: 40px 20px;
+        }
+        span {
+            color: $black-0;
+            font-size: $text-d3;
+        }
+        h3 {
+            color: $black-0;
+            font-weight: $weight-black;
+        }
+        div {
+            color: $black-0;
+            font-size: $text-body;
+            line-height: $sm-lineh;
+        }
+    }
+    &__title {
+        color: $black-0;
+        font-weight: $weight-black;
+        @include mobile {
+            font-size: $text-h4;
+        }
+    }
+    &__caption {
+        color: $black-0;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        font-weight: $weight-black;
+        @include mobile {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            font-size: $text-h3;
+        }
+    }
+}
+
+.partnerblock {
+    margin-bottom: 160px;
+}
+
+.partner {
+    &__iconblock {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 80px 0 160px;
+        @include mobile {
+            padding: 24px 0 48px;
+        }
+    }
+
+    &__title {
+        color: $black-0;
+        font-weight: $weight-black;
+    }
+
+    &__icon {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        &:after {
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content:'';
+            top:0;
+            left: 0;
+            background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%);
+        }
+    }
+}
+
+
+
+.toolblock {
+    background: $black-0;
+    border-radius: 160px;
+    padding: 160px 0;
+
+    @include mobile {
+        border-radius: 20px;
+        padding: 80px 0;
+    }
+}
+
+.tool {
+    &__title {
+        font-size: $text-d3;
+        font-weight: 900;
+        margin-bottom: 80px;
+        @include mobile {
+            font-size: $text-h3;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+    }
+
+    &__card {
+        margin-bottom: 40px;
+        z-index: 10;
+    }
+
+    &__cntnt {
+        z-index:0;
+    }
+
+    &__search {
+        background: $black-20;
+        border-radius: $radius-base;
+        display: flex;
+        gap: 12px;
+        padding: 20px 43px;
+        color: $black-60;
+        margin-bottom: 24px;
+        input {
+            background: none;
+            border: none;
+            flex-grow: 1;
+            width: 100%;
+        }
+    }
+}
+
+.goto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 0;
+    margin: 78px 0;
+    gap: 40px;
+
+    &__sign {
+        font-size: $text-d3;
+        font-weight: 900;
+        color:  $black-0;
+
+        @include mobile {
+            font-size: $text-h3;
+        }
+    }
+
+}
+
+.mobile_break {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}

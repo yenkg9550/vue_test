@@ -1,0 +1,13 @@
+.btn {
+    display: flex;
+    // width: 160px;
+    color: $black-0;
+    padding: 20px 40px;
+    border-radius: $radius-base;
+    border: 1px solid $black-0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: $text-h6;
+}

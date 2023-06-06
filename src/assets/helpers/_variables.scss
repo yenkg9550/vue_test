@@ -1,0 +1,98 @@
+// G-Font-Noto Sans TC
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+// 文字顏色
+$default-color:#000000;
+$primary-color: #F18724;
+$surface-color: #F2EFE7;
+$black-100:#020202;
+$black-80:#525252;
+$black-60:#919191;
+$black-40:#D1D1D1;
+$black-20:#F2F2F2;
+$black-0:#FFFFFF;
+
+
+$radius-base: 16px;
+$box-shadow-base: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+$border-base : 1px solid $black-0;
+
+// 基本字型
+$base-font:'Noto Sans TC', sans-serif;
+$base-lineh: 1.2;
+$sm-lineh:1.5;
+
+*{
+    // 基本字型
+    font-family: $base-font;
+    line-height: $base-lineh;
+}
+
+// 字重
+$weight-black: 900;
+.font-bold{
+    font-weight: bold;
+}
+
+.font-regular{
+    font-weight: normal;
+}
+
+// 大小
+
+// 160px
+.text-d1{
+    font-size: 160px;
+}
+
+// 120px
+$text-d2:120px;
+
+// 80px
+$text-d3:80px;
+
+// 48px
+$text-h1: 3rem;
+h1{
+    font-size: 3rem;
+}
+
+// 40px
+$text-h2: 2.5rem;
+h2{
+    font-size: 2.5rem;
+}
+
+// 32px
+$text-h3: 2rem;
+h3{
+    font-size: 2rem;
+}
+
+// 28px
+$text-h4: 1.75rem;
+h4{
+    font-size: 1.75rem;
+}
+
+// 24px
+$text-h5: 1.5rem;
+h5{
+    font-size: 1.5rem;
+}
+
+// 20px
+$text-h6: 1.25rem;
+h6{
+    font-size: 1.25rem;
+}
+
+// 16px
+$text-body: 1rem;
+
+// 14px
+$text-small: 0.875rem;
+
+// 12px
+$text-tiny: 0.750rem;

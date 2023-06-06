@@ -1,0 +1,82 @@
+@keyframes upone {
+
+    0% {
+        transform: translateY(100%)
+    }
+
+    40%,
+    60% {
+        transform: translateY(0%)
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+.up {
+    animation: upone 2s ease-in-out infinite;
+}
+
+.uptwo {
+    animation: upone 2s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+.upthr {
+    animation: upone 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+
+.animate {
+    overflow: hidden;
+}  
+
+@keyframes show {
+
+    0% {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+}
+
+.none {
+    opacity: 0;
+}
+
+.show {
+    animation: show .5s ease-in;
+    &--two {
+        animation: show .5s ease-in;
+        // animation-delay: .5s;
+    }
+    &--thr {
+        animation: show .5s ease-in;
+        // animation-delay: 1s;
+    }
+    &--fou {
+        animation: show .5s ease-in;
+        // animation-delay: 1.5s;
+    }
+    &--fiv {
+        animation: show .5s ease-in;
+        // animation-delay: 2s;
+    }
+
+}
+
+.v-enter {
+    opacity: 0;
+}
+
+.v-leave {
+    opacity: 0;
+}
